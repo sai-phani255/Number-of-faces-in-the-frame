@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
-from keras.models import load_model
+# from keras.models import load_model
 
-model = load_model('models/cnncat2.h5')
+# model = load_model('models/cnncat2.h5')
 
 face = cv2.CascadeClassifier('haarcascade_profileface.xml')
 
