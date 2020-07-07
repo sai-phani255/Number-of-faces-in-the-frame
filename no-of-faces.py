@@ -4,7 +4,7 @@ from keras.models import load_model
 
 model = load_model('models/cnncat2.h5')
 
-face = cv2.CascadeClassifier('haar cascade files\haarcascade_profileface.xml')
+face = cv2.CascadeClassifier('haarcascade_profileface.xml')
 
 cap = cv2.VideoCapture(0)
 font = cv2.FONT_HERSHEY_COMPLEX_SMALL
