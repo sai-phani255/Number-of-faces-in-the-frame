@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-face = cv2.CascadeClassifier('haar cascade files\haarcascade_frontalface_default.xml')
+face = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 cap = cv2.VideoCapture(0)
 font = cv2.FONT_HERSHEY_COMPLEX_SMALL
@@ -25,6 +25,7 @@ while(True):
     key=cv2.waitKey(1)
     
     if key == ord('s'):
+        # Press 's' to quit
         break
 cap.release()
 cv2.destroyAllWindows()
